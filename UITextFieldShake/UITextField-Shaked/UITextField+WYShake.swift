@@ -15,7 +15,7 @@ extension UITextField {
     case Vertical
   }
 
-  func wy_shakeWith(var times: Int = 10, delta: CGFloat = 5, speed: NSTimeInterval = 0.03, shakeDirection: WYShakeDirection = .Horizontal, completionHandle: (() -> ())? = nil) {
+  func wy_shakeWith(times: Int = 10, delta: CGFloat = 5, speed: NSTimeInterval = 0.03, shakeDirection: WYShakeDirection = .Horizontal, completionHandle: (() -> ())? = nil) {
     let direction: CGFloat = (times % 2 == 0) ? 1 : -1
     UIView.animateWithDuration(speed, animations: { () -> Void in
       self.transform = (shakeDirection == WYShakeDirection.Horizontal) ?
@@ -33,7 +33,7 @@ extension UITextField {
         return
       }
       
-      self.wy_shakeWith(times: times - 1, delta: delta, speed: speed, shakeDirection: shakeDirection, completionHandle: completionHandle)
+      self.wy_shakeWith(times - 1, delta: delta, speed: speed, shakeDirection: shakeDirection, completionHandle: completionHandle)
     }
   }
   

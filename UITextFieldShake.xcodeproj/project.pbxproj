@@ -167,6 +167,8 @@
 		B803FFF61B3E87F70027356B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0720;
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = secoo;
 				TargetAttributes = {
@@ -414,6 +416,7 @@
 				B803001F1B3E87F70027356B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B80300201B3E87F70027356B /* Build configuration list for PBXNativeTarget "UITextFieldShakeTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +425,7 @@
 				B80300221B3E87F70027356B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B803FFF91B3E87F70027356B /* Build configuration list for PBXProject "UITextFieldShake" */ = {
 			isa = XCConfigurationList;

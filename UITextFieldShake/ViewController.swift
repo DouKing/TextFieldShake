@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     textField!.center = self.view.center
     self.view.addSubview(textField!)
     
-    let button: UIButton = UIButton.buttonWithType(UIButtonType.System) as! UIButton
+    let button: UIButton = UIButton(type: UIButtonType.System)
     button.frame = CGRectMake(20, 64, 100, 44)
     button.setTitle("Shake", forState: UIControlState.Normal)
     button.addTarget(self, action: "_startShake:", forControlEvents: UIControlEvents.TouchUpInside)
@@ -33,7 +33,7 @@ class ViewController: UIViewController {
   // MARK: - 执行振动
   func _startShake(sender: UIButton) {
     self.textField?.wy_shakeWith(completionHandle: {() -> () in
-      println("我是回调啊")
+      print("我是回调啊")
     })
   }
 
